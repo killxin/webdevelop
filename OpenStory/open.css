@@ -1,0 +1,39 @@
+html{
+    background-color: aliceblue;
+    padding: 0 10%;
+}
+body{
+
+}
+header.topbar{
+    float: left;
+    background-color: rgba(255,152,0,100);
+    display: flex;
+    flex-wrap: wrap;
+}
+header.topbar div{
+    position: relative;
+    float: left;
+    text-align: center;
+    color: white;
+}
+header.topbar div.webname{
+    font-family: Verdana;
+    font-size: 2.5em;
+    left: 2%;
+    width: 20%;
+    margin-right: 50%;
+}
+header.topbar div.guide{
+    font-family: "微软雅黑";
+    font-size: 1em;
+    width: 50%;
+    padding-top: 2em;
+}
+div.guide span{
+    margin: 0 4%;  
+}
+
+.test{
+    border: 2px solid black;
+}
