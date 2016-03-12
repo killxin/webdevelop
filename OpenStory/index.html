@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GET START WITH OPENSTORY</title>
+    <link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-indicators {
+            position: relative;
+            bottom: 10px;
+            left: 0%;
+            z-index: 15;
+            width: 60%;
+            padding-left: 0;
+            margin-left: 0;
+            text-align: left;
+            list-style: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default" style="margin-bottom:0px">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">OPENSTORY</a>
+        </div>
+        <div>
+            <ul class="nav navbar-nav">
+                <li class="active"><a href="index.html">首页</a></li>
+                <li><a href="#">推荐</a></li>
+                <li><a href="#">话题</a></li>
+            </ul>
+            <form class="navbar-form navbar-left" role="search">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">搜索</button>
+            </form>
+            <div class="navbar-right" style="margin-right:10%">
+
+                <!-- Modal -->
+                <div class="modal fade" id="signin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content" style="width:30em">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h2 class="form-signin-heading">登录</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-signin">
+                                    <label for="inputEmail" class="sr-only">邮箱名</label>
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="邮箱" required autofocus>
+                                    <label for="inputPassword" class="sr-only">密码</label>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+                                    <hr>
+                                    <button class="btn btn-primary" type="submit">登录</button>
+                                    <button class="btn btn-primary" type="reset">重置</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content" style="width:30em">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                <h2 class="form-signin-heading">注册</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-signin">
+                                    <label for="inputName" class="sr-only">用户名</label>
+                                    <input id="inputName" class="form-control" placeholder="用户名" required autofocus>
+                                    <label for="inputEmail" class="sr-only">邮箱名</label>
+                                    <input type="email" id="inputEmail" class="form-control" placeholder="邮箱" required>
+                                    <label for="inputPassword" class="sr-only">密码</label>
+                                    <input type="password" id="inputPassword" class="form-control" placeholder="密码" required>
+                                    <hr>
+                                    <button class="btn btn-primary" type="submit">注册</button>
+                                    <button class="btn btn-primary" type="reset">重置</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <button type="button" class="btn btn-primary navbar-btn" data-toggle="modal" data-target="#signin">登录</button>
+                <button type="button" class="btn btn-default navbar-btn" data-toggle="modal" data-target="#login">注册</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron" style="margin-bottom:0px">
+        <div class="container">
+            <div style="text-align:left">
+                <h1>OpenStory</h1>
+                <h2>开放的文字平台</h2>
+                <hr/>
+            </div>
+
+            <div style="font-size:20px;color:black">
+                <div id="carousel-intro" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active" style="color:blueviolet;min-height:150px;width:60%">
+                            <p>灵感来自git，博客，wiki，知乎，以期实现文字产品的协同开发。</p>
+                        </div>
+                        <div class="item" style="color:blue;min-height:150px;width:60%">
+                            <p>每个用户可以构建文字库，开发版本可以自己单独开发，可以邀请合作者共同开发，也可以开放到所有人均可开发，每个具有操作权限的用户均有权利对该文字库的内容进行修改，每次修改均有相应的标记点，可以查看不同时期的各个版本，也可以开多个分支。发布版本就以博客的形式进行发布，此时的文字即可视为成品，供所有人阅读。</p>
+                        </div>
+                        <div class="item" style="color:brown;min-height:150px;width:60%">
+                            <p>道理上可以撰写任何形式的文字产品，如小说，剧本，报告等，最基本的场合是为合作完成的实验共同撰写实验报告，试想如果能像当前的知乎那样吸引到一批高质量的写手，大家按照各自的风格共同完成一部小说，或者完成具有多个情节分支的小说，或者观众发挥自己的想象力写一部电视剧剧本，那我们的故事一定会非常精彩。</p>
+                        </div>
+                    </div>
+                </div>
+
+                <ol class="carousel-indicators pagination" style="position:relative padding:2px">
+                    <li data-target="#carousel-intro" data-slide-to="0">
+                        <a style="background-color:blueviolet"></a>
+                    </li>
+                    <li data-target="#carousel-intro" data-slide-to="1">
+                        <a style="background-color:blue"></a>
+                    </li>
+                    <li data-target="#carousel-intro" data-slide-to="2">
+                        <a style="background-color:brown"></a>
+                        
+                    </li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            &copy; Copyright All About Jrh
+        </div>
+    </footer>
+
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+    <script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
